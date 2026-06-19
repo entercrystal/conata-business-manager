@@ -6,7 +6,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/',
   logLevel: 'error', // Suppress warnings, only show errors
   resolve: {
     alias: {
