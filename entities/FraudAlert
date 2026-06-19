@@ -1,0 +1,58 @@
+{
+  "name": "FraudAlert",
+  "type": "object",
+  "properties": {
+    "raw_text": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "processing",
+        "reviewed",
+        "escalated",
+        "closed"
+      ],
+      "default": "pending"
+    },
+    "triage_data": {
+      "type": "string",
+      "description": "JSON string of triage extraction"
+    },
+    "entity_data": {
+      "type": "string",
+      "description": "JSON string of entity check results"
+    },
+    "risk_score": {
+      "type": "number",
+      "description": "0-100"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "critical"
+      ]
+    },
+    "escalation_action": {
+      "type": "string",
+      "enum": [
+        "auto_approve",
+        "manual_review",
+        "file_sar"
+      ]
+    },
+    "escalation_reasoning": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "raw_text"
+  ]
+}

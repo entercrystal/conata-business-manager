@@ -1,0 +1,26 @@
+{
+  "name": "Worker",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "productivity_score": {
+      "type": "number",
+      "description": "0-100"
+    },
+    "satisfaction_score": {
+      "type": "number",
+      "description": "0-100"
+    },
+    "hourly_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

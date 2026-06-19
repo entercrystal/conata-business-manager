@@ -1,0 +1,26 @@
+{
+  "name": "AIConversation",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "messages": {
+      "type": "string",
+      "description": "JSON string of message array"
+    },
+    "persona": {
+      "type": "string",
+      "enum": [
+        "general",
+        "optimist",
+        "pessimist",
+        "realist"
+      ],
+      "default": "general"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

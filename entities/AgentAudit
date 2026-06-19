@@ -1,0 +1,26 @@
+{
+  "name": "AgentAudit",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "agent_name": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "input_summary": {
+      "type": "string"
+    },
+    "output_summary": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "agent_name",
+    "action"
+  ]
+}

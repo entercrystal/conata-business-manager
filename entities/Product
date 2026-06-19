@@ -1,0 +1,30 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "stock": {
+      "type": "number",
+      "default": 0
+    },
+    "reorder_point": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "required": [
+    "name",
+    "stock"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "MonthlyMetrics",
+  "type": "object",
+  "properties": {
+    "month": {
+      "type": "string",
+      "format": "date",
+      "description": "First day of month"
+    },
+    "revenue": {
+      "type": "number",
+      "default": 0
+    },
+    "expenses": {
+      "type": "number",
+      "default": 0
+    },
+    "profit": {
+      "type": "number",
+      "default": 0
+    },
+    "productivity_avg": {
+      "type": "number",
+      "default": 0,
+      "description": "0-100"
+    },
+    "satisfaction_avg": {
+      "type": "number",
+      "default": 0,
+      "description": "0-100"
+    },
+    "headcount": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "month"
+  ]
+}
